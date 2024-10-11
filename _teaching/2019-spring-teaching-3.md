@@ -1,10 +1,10 @@
 ---
 title: "Advanced Topics in Mobile Robotics"
 collection: teaching
-type: "Postgraduate course by Prof. Leena Vachhani and Prof. Arpita Sinha"
+type: "(Spring 2019) Postgraduate course by Prof. Leena Vachhani and Prof. Arpita Sinha"
 permalink: /teaching/2019-spring-teaching-3
 venue: "IIT Bombay, Systems and Control"
-date: Autumn 2019
+date: 02-01-2019
 location: "Mumbai, India"
 ---
 
