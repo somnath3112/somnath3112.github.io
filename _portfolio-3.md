@@ -1,0 +1,10 @@
+---
+title: "Quadruped"
+excerpt: "Quadruped in ROS-Gazebo and MuJoCo.<br/><img src='/images/qped_thumbnail.png'>"
+collection: portfolio
+---
+
+ [Planning](https://www.youtube.com/playlist?list=PLeSCFB3ScayliH88QdEOWEA-8GdDj-G6t), [Control](https://www.youtube.com/playlist?list=PLeSCFB3Scayl5d13Q9SgN08hZuESpzMK3), and [Learning](to_be_added). 
+
+ **Under development.**
+ 
