@@ -1,6 +1,6 @@
 ---
 title: "Quadruped"
-excerpt: "Quadruped in ROS-Gazebo and MuJoCo.<br/><img src='/images/qped_thumbnail.png'>"
+excerpt: "Quadruped in Matlab-Python-ROS-Gazebo and MuJoCo-SBL3.<br/><img src='/images/qped_thumbnail.png'>"
 collection: portfolio
 ---
 
