@@ -4,7 +4,7 @@ excerpt: "Quadruped in ROS-Gazebo and MuJoCo.<br/><img src='/images/qped_thumbna
 collection: portfolio
 ---
 
- [Planning](https://www.youtube.com/playlist?list=PLeSCFB3ScayliH88QdEOWEA-8GdDj-G6t), [Control](https://www.youtube.com/playlist?list=PLeSCFB3Scayl5d13Q9SgN08hZuESpzMK3), and [Learning](to_be_added). 
+ [Planning](https://www.youtube.com/playlist?list=PLeSCFB3ScayliH88QdEOWEA-8GdDj-G6t), [Control](https://www.youtube.com/playlist?list=PLeSCFB3Scayl5d13Q9SgN08hZuESpzMK3), and [Learning]([to_be_added](https://www.youtube.com/playlist?list=PLeSCFB3ScayksgDsXM790253w18kFyePm)). 
 
  **Under development.**
  
