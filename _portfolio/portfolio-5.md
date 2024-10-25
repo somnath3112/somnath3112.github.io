@@ -1,6 +1,6 @@
 ---
 title: "IMU interface - 3D visualization."
-excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/with_sarat.png' style='width:500px;height:600px;'>"
+excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/for_sarat.png' style='width:500px;height:600px;'>"
 collection: portfolio
 ---
 
