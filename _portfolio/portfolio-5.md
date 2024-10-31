@@ -1,6 +1,6 @@
 ---
-title: "IMU interface - 3D visualization."
-excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/for_sarat.png' style='width:500px;height:600px;'>"
+title: "Multi-agent exploration in ROS-Gazebo."
+excerpt: "Implementing Dr. S. C. Nagavarapu's multi-agent exploration algorithm in ROS-Gazebo.<br/><img src='/images/for_sarat.png' style='width:500px;height:400px;'>"
 collection: portfolio
 ---
 
