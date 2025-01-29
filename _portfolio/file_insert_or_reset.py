@@ -23,34 +23,33 @@ def rename_file(old_name, new_name):
         print(f"Permission denied to rename {old_name}")
     except Exception as e:
         print(f"An error occurred: {e}")
-
-# # Example usage
-# old_name = 'old_file.txt'
-# new_name = 'new_file.txt'
-# rename_file(old_name, new_name)
-
-# Example usage
+        
+# Settings
+zero_fill = 3
 directory = 'F:/Profile/somnath3112.github.io/_portfolio/'
+
+# Main code
 all_files = list_files_in_directory(directory)
 portfolio_files = [file for file in all_files if file.startswith('portfolio')]
 no_of_portfolio_files = len(portfolio_files)
 
+# Input from user
 new_file_ID = int(input("\n\nCreate a portfolio file using ID [0 to reset names]: "))
 
 # Sort the names 
 for pf_id, file in enumerate(reversed(portfolio_files)): 
     file_path = os.path.join(directory, file)
-    sorted_file_path = os.path.join(directory, 'portfolio-' + str(no_of_portfolio_files - pf_id) + '.md')
+    sorted_file_path = os.path.join(directory, 'portfolio-' + str(no_of_portfolio_files - pf_id).zfill(zero_fill) + '.md')
     rename_file(file_path, sorted_file_path)
     
 # Rename the files to insert a new one 
 if new_file_ID>=1:
     for pf_id in range(no_of_portfolio_files, new_file_ID-1, -1):
-        old_file_path = os.path.join(directory, 'portfolio-' + str(pf_id) + '.md')
-        new_file_path = os.path.join(directory, 'portfolio-' + str(pf_id + 1) + '.md')
+        old_file_path = os.path.join(directory, 'portfolio-' + str(pf_id).zfill(zero_fill) + '.md')
+        new_file_path = os.path.join(directory, 'portfolio-' + str(pf_id + 1).zfill(zero_fill) + '.md')
         rename_file(old_file_path, new_file_path)
 
-    new_file_path = os.path.join(directory, 'portfolio-' + str(new_file_ID) + '.md')
+    new_file_path = os.path.join(directory, 'portfolio-' + str(new_file_ID).zfill(zero_fill) + '.md')
     try:
         with open(new_file_path, 'w') as new_file:
             new_file.write(
