@@ -1,10 +1,8 @@
----
-title: "Multi-agent exploration in ROS-Gazebo."
-excerpt: "Implementing Dr. S. C. Nagavarapu's multi-agent exploration algorithm in ROS-Gazebo.<br/><img src='/images/for_sarat.png' style='width:500px;height:400px;'>"
+title: "Quadruped"
+excerpt: "Quadruped in Matlab-Python-ROS-Gazebo and MuJoCo-SBL3.<br/><img src='/images/qped_thumbnail.png'>"
 collection: portfolio
 ---
 
-ROS-Gazebo simulation for the journal with Dr. S. C. Nagavarapu. [Youtube link](https://www.youtube.com/watch?v=zDn6QxqzTAY&t=895s). 
+ YouTube link for: [Planning](https://www.youtube.com/playlist?list=PLeSCFB3ScayliH88QdEOWEA-8GdDj-G6t), [Control](https://www.youtube.com/playlist?list=PLeSCFB3Scayl5d13Q9SgN08hZuESpzMK3), and [Learning](https://www.youtube.com/playlist?list=PLeSCFB3ScayksgDsXM790253w18kFyePm). 
 
-Link to the [paper](https://doi.org/10.1007/s12555-019-0067-8). 
- 
+ **Under development.**

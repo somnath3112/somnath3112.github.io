@@ -1,8 +1,10 @@
-title: "Quadruped"
-excerpt: "Quadruped in Matlab-Python-ROS-Gazebo and MuJoCo-SBL3.<br/><img src='/images/qped_thumbnail.png'>"
+---
+title: "IMU interface - 3D visualization."
+excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/imu.png'>"
 collection: portfolio
 ---
 
- YouTube link for: [Planning](https://www.youtube.com/playlist?list=PLeSCFB3ScayliH88QdEOWEA-8GdDj-G6t), [Control](https://www.youtube.com/playlist?list=PLeSCFB3Scayl5d13Q9SgN08hZuESpzMK3), and [Learning](https://www.youtube.com/playlist?list=PLeSCFB3ScayksgDsXM790253w18kFyePm). 
+A hobby project from my masters showing IMU interface to update the orientation of a virtual cuboid. [Youtube link](https://www.youtube.com/watch?v=GLnzKuQvPm8). 
 
- **Under development.**
+The setup utilizes Atmega128 microcontroller to interface with the MPU-6050 IMU device using I2C protocol. The gyroscope data is ternsmitted to matlab via USB2UART converter for serial communication. The simulink model integrates the angular rate information and feed to the angles to the Virtual Reality Toolbox. 
+ 

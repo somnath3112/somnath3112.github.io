@@ -1,7 +1,14 @@
 ---
-title: "Enter a title."
-excerpt: "About the project.<br/><img src='/images/sample.png' style='width:500px;height:500px;'>"
+title: "[Started Jan 2025] Navigation and SLAM."
+excerpt: "Extending the ORB-SLAM2 for robotics application.<br/><img src='/images/sample.png' style='width:500px;height:500px;'>"
 collection: portfolio
 ---
 
-Description of the project.
+# Topics 
+1. Setup 
+2. Preliminary results 
+
+## 1. Setup 
+
+#### Pangolin 
+

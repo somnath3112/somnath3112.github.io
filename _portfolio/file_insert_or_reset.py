@@ -38,9 +38,9 @@ no_of_portfolio_files = len(portfolio_files)
 new_file_ID = int(input("\n\nCreate a portfolio file using ID [0 to reset names]: "))
 
 # Sort the names 
-for pf_id, file in enumerate(portfolio_files): 
+for pf_id, file in enumerate(reversed(portfolio_files)): 
     file_path = os.path.join(directory, file)
-    sorted_file_path = os.path.join(directory, 'portfolio-' + str(pf_id + 1) + '.md')
+    sorted_file_path = os.path.join(directory, 'portfolio-' + str(no_of_portfolio_files - pf_id) + '.md')
     rename_file(file_path, sorted_file_path)
     
 # Rename the files to insert a new one 
@@ -54,7 +54,7 @@ if new_file_ID>=1:
     try:
         with open(new_file_path, 'w') as new_file:
             new_file.write(
-            "\n---"
+            "---"
             + "\ntitle: \"Enter a title.\""
             + "\nexcerpt: \"About the project.<br/><img src='/images/sample.png' style='width:500px;height:500px;'>\""
             + "\ncollection: portfolio"
