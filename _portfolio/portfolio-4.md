@@ -1,10 +1,10 @@
 ---
-title: "IMU interface - 3D visualization."
-excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/imu.png'>"
+title: "Multi-agent exploration in ROS-Gazebo."
+excerpt: "Implementing Dr. S. C. Nagavarapu's multi-agent exploration algorithm in ROS-Gazebo.<br/><img src='/images/for_sarat.png' style='width:500px;height:400px;'>"
 collection: portfolio
 ---
 
-A hobby project from my masters showing IMU interface to update the orientation of a virtual cuboid. [Youtube link](https://www.youtube.com/watch?v=GLnzKuQvPm8). 
+ROS-Gazebo simulation for the journal with Dr. S. C. Nagavarapu. [Youtube link](https://www.youtube.com/watch?v=zDn6QxqzTAY&t=895s). 
 
-The setup utilizes Atmega128 microcontroller to interface with the MPU-6050 IMU device using I2C protocol. The gyroscope data is ternsmitted to matlab via USB2UART converter for serial communication. The simulink model integrates the angular rate information and feed to the angles to the Virtual Reality Toolbox. 
+Link to the [paper](https://doi.org/10.1007/s12555-019-0067-8). 
  

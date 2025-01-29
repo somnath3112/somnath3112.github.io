@@ -1,9 +1,10 @@
 ---
-title: "Fundamentals of Deep Reinforcement Learning."
-excerpt: "To grasp the concepts of Deep RL.<br/><img src='/images/drl.png' style='width:500px;height:500px;'>"
+title: "IMU interface - 3D visualization."
+excerpt: "IMU interface and visualization in Matlab.<br/><img src='/images/imu.png'>"
 collection: portfolio
 ---
 
+A hobby project from my masters showing IMU interface to update the orientation of a virtual cuboid. [Youtube link](https://www.youtube.com/watch?v=GLnzKuQvPm8). 
 
-To grasp the concepts of Deep RL: 
- - Rocky road and RL basics [link](https://github.com/somnath3112/Rocky_Road_DRL/tree/main)
+The setup utilizes Atmega128 microcontroller to interface with the MPU-6050 IMU device using I2C protocol. The gyroscope data is ternsmitted to matlab via USB2UART converter for serial communication. The simulink model integrates the angular rate information and feed to the angles to the Virtual Reality Toolbox. 
+ 
