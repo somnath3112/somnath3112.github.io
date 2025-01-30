@@ -1,5 +1,5 @@
 ---
-title: "Quadruped"
+title: "[Active] Quadruped"
 excerpt: "Quadruped in Matlab-Python-ROS-Gazebo and MuJoCo-SBL3.<br/><img src='/images/qped_thumbnail.png'>"
 collection: portfolio
 ---
