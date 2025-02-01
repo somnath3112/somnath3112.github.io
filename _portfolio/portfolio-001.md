@@ -37,6 +37,12 @@ In the context of SLAM (Simultaneous Localization and Mapping), OpenCV is partic
 
 By utilizing OpenCV, developers can enhance the performance and accuracy of their SLAM systems, enabling robots to navigate and map their surroundings more effectively.
 
+**Video Description:** In the video-test to show open CV and Pangolin working together, we demonstrate the process of loading a test image, applying edge detection, and then displaying the result in a rotation animation. The edge detection algorithm highlights the boundaries within the image, making it easier to identify distinct features. The rotation animation provides a dynamic view of the processed image, showcasing the effectiveness of the edge detection technique.
+
+<video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/dual_cv_pangolin_test.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 ### Eigen 
 
