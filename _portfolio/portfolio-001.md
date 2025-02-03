@@ -10,6 +10,8 @@ collection: portfolio
 
 ## 1. Setup 
 
+Before working with ORB-SLAM2 and its forks, you need to set up the following dependencies: **Pangolin** for real-time 3D visualization and debugging, **OpenCV** for computer vision tasks like feature detection, image preprocessing, pose estimation, and visualization, and **Eigen** for efficient linear algebra operations essential for SLAM algorithms. These dependencies ensure efficient and accurate performance of your SLAM system. 
+
 ### Pangolin 
 
 Pangolin is a lightweight and efficient library for managing OpenGL display and interaction. It is particularly useful in SLAM (Simultaneous Localization and Mapping) applications for visualizing the 3D environment and the trajectory of the robot in real-time. By providing an intuitive interface for rendering graphics, Pangolin helps developers to debug and analyze the performance of their SLAM algorithms effectively.
@@ -51,3 +53,8 @@ Eigen is a C++ template library for linear algebra, including matrices, vectors,
 In the context of SLAM (Simultaneous Localization and Mapping), Eigen is used extensively for matrix and vector operations, which are fundamental to the algorithms involved. For instance, Eigen is used for transformations, optimizations, and solving systems of linear equations, all of which are critical for accurately mapping the environment and determining the robot's position within it.
 
 By leveraging Eigen, developers can ensure that their SLAM implementations are both fast and reliable, enabling real-time performance and accurate results in robotics applications.
+
+## 2. Preliminary results 
+
+### ORB-SLAM2 
+
