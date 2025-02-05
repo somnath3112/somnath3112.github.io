@@ -58,3 +58,18 @@ By leveraging Eigen, developers can ensure that their SLAM implementations are b
 
 ### ORB-SLAM2 
 
+ORB-SLAM2 is a versatile and highly efficient SLAM (Simultaneous Localization and Mapping) system that can operate in real-time. It is capable of processing monocular, stereo, and RGB-D camera inputs, making it suitable for a wide range of applications in robotics and computer vision.
+
+Key features of ORB-SLAM2 include:
+
+- **Feature Extraction and Matching**: ORB-SLAM2 uses ORB (Oriented FAST and Rotated BRIEF) features for tracking and mapping. These features are robust to changes in lighting and viewpoint, making them ideal for SLAM applications.
+- **Local Mapping**: The system maintains a local map of the environment, which is continuously updated as the robot moves. This local map is used to optimize the robot's trajectory and improve the accuracy of the SLAM process.
+- **Loop Closing**: ORB-SLAM2 includes a loop closing mechanism that detects when the robot revisits a previously mapped area. This allows the system to correct any drift in the robot's trajectory and improve the overall consistency of the map.
+- **Relocalization**: If the robot loses track of its position, ORB-SLAM2 can relocalize itself by matching the current view with the existing map. This ensures that the system can recover from tracking failures and continue operating effectively.
+
+The preliminary results of our experiments with ORB-SLAM2 demonstrate its ability to accurately track the robot's movement and build a detailed map of the environment. The system performs well in various scenarios, including indoor and outdoor environments, and can handle challenging conditions such as dynamic objects and changes in lighting.
+
+<video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/orb_slam2_test.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
