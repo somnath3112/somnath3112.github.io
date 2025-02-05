@@ -1,8 +1,10 @@
 ---
 title: "[Active] Navigation and SLAM."
-excerpt: "Extending the ORB-SLAM2 for robotics application.<br/><img src='/images/Video_snaps/pangolin_test.gif' style='width:640px;height:360px;'>"
+excerpt: "Extending the ORB-SLAM2 for robotics application.<br/><img src='/images/Video_snaps/orb_slam2_test.gif' style='width:640px;height:360px;'>"
 collection: portfolio
 ---
+
+<img src='/images/Video_snaps/pangolin_test.gif' style='width:640px;height:360px;'>
 
 # Topics 
 1. Setup 
