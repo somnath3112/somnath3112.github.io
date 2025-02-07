@@ -4,6 +4,8 @@ excerpt: "Extending the ORB-SLAM2 for robotics application.<br/><img src='/image
 collection: portfolio
 ---
 
+_Collaborators: Vivek Yogi_
+
 # Topics 
 1. Setup 
 2. Preliminary results 
