@@ -1,18 +1,17 @@
 ---
 title: "[Active] Navigation and SLAM."
-excerpt: "Extending the ORB-SLAM2 for robotics application.<br/><img src='/images/Video_snaps/orb_slam2_test.gif' style='width:640px;height:360px;'>"
+excerpt: "Extending ORB-SLAM2 & 3 for robotics application.<br/><img src='/images/Video_snaps/orb_slam2_test.gif' style='width:640px;height:360px;'>"
 collection: portfolio
 ---
 
 _Collaborators: Vivek Yogi_
-
 # Topics 
 1. Setup 
 2. Preliminary results 
 
 ## 1. Setup 
 
-Before working with ORB-SLAM2 and its forks, you need to set up the following dependencies: **Pangolin** for real-time 3D visualization and debugging, **OpenCV** for computer vision tasks like feature detection, image preprocessing, pose estimation, and visualization, and **Eigen** for efficient linear algebra operations essential for SLAM algorithms. These dependencies ensure efficient and accurate performance of your SLAM system. 
+Before working with ORB-SLAM2 and ORB-SLAM3 and their forks, you need to set up the following dependencies: **Pangolin** for real-time 3D visualization and debugging, **OpenCV** for computer vision tasks like feature detection, image preprocessing, pose estimation, and visualization, and **Eigen** for efficient linear algebra operations essential for SLAM algorithms. These dependencies ensure efficient and accurate performance of your SLAM system. 
 
 ### Pangolin 
 
@@ -55,18 +54,18 @@ By leveraging Eigen, developers can ensure that their SLAM implementations are b
 
 ## 2. Preliminary results 
 
-### ORB-SLAM2 
+### ORB-SLAM2, VI-ORB-SLAM2, and ORB-SLAM3
 
-ORB-SLAM2 is a versatile and highly efficient SLAM (Simultaneous Localization and Mapping) system that can operate in real-time. It is capable of processing monocular, stereo, and RGB-D camera inputs, making it suitable for a wide range of applications in robotics and computer vision.
+ORB-SLAM2 and ORB-SLAM3 are versatile and highly efficient SLAM (Simultaneous Localization and Mapping) systems that can operate in real-time. They are capable of processing monocular, stereo, and RGB-D camera inputs, making them suitable for a wide range of applications in robotics and computer vision.
 
-Key features of ORB-SLAM2 include:
+Key features of ORB-SLAM2 and ORB-SLAM3 include:
 
-- **Feature Extraction and Matching**: ORB-SLAM2 uses ORB (Oriented FAST and Rotated BRIEF) features for tracking and mapping. These features are robust to changes in lighting and viewpoint, making them ideal for SLAM applications.
-- **Local Mapping**: The system maintains a local map of the environment, which is continuously updated as the robot moves. This local map is used to optimize the robot's trajectory and improve the accuracy of the SLAM process.
-- **Loop Closing**: ORB-SLAM2 includes a loop closing mechanism that detects when the robot revisits a previously mapped area. This allows the system to correct any drift in the robot's trajectory and improve the overall consistency of the map.
-- **Relocalization**: If the robot loses track of its position, ORB-SLAM2 can relocalize itself by matching the current view with the existing map. This ensures that the system can recover from tracking failures and continue operating effectively.
+- **Feature Extraction and Matching**: Both systems use ORB (Oriented FAST and Rotated BRIEF) features for tracking and mapping. These features are robust to changes in lighting and viewpoint, making them ideal for SLAM applications.
+- **Local Mapping**: The systems maintain a local map of the environment, which is continuously updated as the robot moves. This local map is used to optimize the robot's trajectory and improve the accuracy of the SLAM process.
+- **Loop Closing**: ORB-SLAM2 and ORB-SLAM3 include a loop closing mechanism that detects when the robot revisits a previously mapped area. This allows the systems to correct any drift in the robot's trajectory and improve the overall consistency of the map.
+- **Relocalization**: If the robot loses track of its position, both systems can relocalize themselves by matching the current view with the existing map. This ensures that the systems can recover from tracking failures and continue operating effectively.
 
-The preliminary results of our experiments with ORB-SLAM2 demonstrate its ability to accurately track the robot's movement and build a detailed map of the environment. The system performs well in various scenarios, including indoor and outdoor environments, and can handle challenging conditions such as dynamic objects and changes in lighting.
+The preliminary results of our experiments with ORB-SLAM2 demonstrate their ability to accurately track the robot's movement and build a detailed map of the environment. The systems perform well in various scenarios, including indoor and outdoor environments, and can handle challenging conditions such as dynamic objects and changes in lighting.
 
 <video width="640" height="360" controls>
     <source src="https://somnath3112.github.io/files/videos/orb_slam2_test.mp4" type="video/mp4">
@@ -74,6 +73,47 @@ The preliminary results of our experiments with ORB-SLAM2 demonstrate its abilit
 </video>
 
 <video width="640" height="360" controls>
-    <source src="https://somnath3112.github.io/files/videos/res1_slam.mp4" type="video/mp4">
+    <source src="https://somnath3112.github.io/files/videos/res1_slam2.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+The preliminary results of our experiments with VI-ORB-SLAM2 show its capability to handle visual-inertial data effectively. VI-ORB-SLAM2 integrates visual information from cameras with inertial measurements from IMUs (Inertial Measurement Units), providing more robust and accurate SLAM performance, especially in challenging environments.
+
+Key observations from our experiments include:
+
+- **Improved Robustness**: The integration of inertial data helps in maintaining accurate tracking even in scenarios with rapid motion or temporary visual occlusions. This results in a more stable and reliable SLAM system.
+- **Enhanced Accuracy**: By combining visual and inertial data, VI-ORB-SLAM2 can achieve higher accuracy in both trajectory estimation and map building. This is particularly beneficial in environments with poor lighting or repetitive textures where visual-only SLAM might struggle.
+- **Better Loop Closure**: The inertial data aids in detecting loop closures more reliably, reducing drift and improving the overall consistency of the map.
+
+The results demonstrate that VI-ORB-SLAM2 is well-suited for applications requiring high precision and robustness, such as autonomous navigation in complex and dynamic environments.
+
+<video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/vi_orb_slam2_test.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- <video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/res1_vislam2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
+
+The preliminary results of our experiments with ORB-SLAM3 highlight its advanced capabilities in handling various SLAM tasks. ORB-SLAM3 extends the functionalities of ORB-SLAM2 by supporting monocular, stereo, and RGB-D cameras, as well as visual-inertial systems. This makes it a versatile solution for a wide range of applications in robotics and computer vision.
+
+Key observations from our experiments with ORB-SLAM3 include:
+
+- **Enhanced Feature Tracking**: ORB-SLAM3 improves upon the feature tracking capabilities of its predecessor by incorporating more robust algorithms for feature extraction and matching. This results in more accurate and reliable tracking, even in challenging environments with dynamic objects and varying lighting conditions.
+- **Improved Map Management**: The system includes advanced map management techniques that allow for more efficient handling of large-scale environments. This includes better data association, map pruning, and optimization strategies that enhance the overall performance of the SLAM process.
+- **Visual-Inertial Integration**: ORB-SLAM3 seamlessly integrates visual and inertial data, providing more robust and accurate SLAM performance. This integration helps in maintaining accurate tracking and mapping in scenarios with rapid motion or temporary visual occlusions.
+- **Loop Closure and Relocalization**: The system includes improved loop closure and relocalization mechanisms that enhance the consistency and accuracy of the generated maps. This is particularly beneficial in large and complex environments where revisiting previously mapped areas is common.
+
+The preliminary results demonstrate that ORB-SLAM3 is capable of delivering high-precision and reliable SLAM performance in a variety of scenarios. Its ability to handle different types of camera inputs and integrate visual-inertial data makes it a powerful tool for autonomous navigation and mapping applications.
+
+<video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/orb_slam3_test.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- <video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/res1_slam3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video> -->
