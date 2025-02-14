@@ -122,3 +122,8 @@ The preliminary results demonstrate that ORB-SLAM3 is capable of delivering high
     <source src="https://somnath3112.github.io/files/videos/res1_slam3.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+<video width="640" height="360" controls>
+    <source src="https://somnath3112.github.io/files/videos/res1_slam3_imu.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
